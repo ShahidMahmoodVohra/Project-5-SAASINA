@@ -112,15 +112,15 @@ section{
 /* home section start  */
 
 .heading-1{
-
-  /* border: 3px solid grey; */
-  color: #424242;
+ /* border: 3px solid grey;  */
+  background: var(--optional);
+  color: var(--black);
   justify-content: center;
   text-align: center;
   padding: 10px 5px;
-  border-radius: 10px;
-  height: 100%;
-  margin-top: 5rem;
+  border-radius: 5px;
+  margin-top: 5rem; 
+  font-size: 30px;
 }
 
   .section{
@@ -200,3 +200,68 @@ flex-wrap: nowrap;
  color: white;
  font-size: 21px;
 }
+/* home section end */
+
+.btn{
+ 
+  background: var(--optional);
+  color: var(--black);
+  text-transform: capitalize;
+  font-size: 20px;
+  margin: 10px 0px;
+  padding: 15px 25px;
+  border-radius: 5px;
+
+}
+.btn-1{
+ 
+  background: var(--optional);
+  color: var(--black);
+  text-transform: capitalize;
+  font-size: 20px;
+  padding: 1px 8px;
+  border-radius: 5px;
+margin-bottom:10px;
+ 
+
+}
+
+
+.section a:hover{
+
+  background: var(--grey);
+  color: #fff;
+}
+.heading{
+  text-align: center;
+  font-size: 3.5rem;
+  color: var(--black);
+   padding: 1rem;
+  text-transform: uppercase;
+}
+.heading span{
+  text-transform: uppercase;
+  color: crimson;
+}
+
+
+/* category section start */
+
+.category .box-container{
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  height: 900px;
+
+}
+.category .box-container .box{
+  border:.1rem solid rgba(0,0,0,.3);
+  border-radius: .5rem;
+  text-align: center;
+  padding: 2rem;
+  flex:1 1 30rem ;
+}
+
+
+
+/* category section end */
