@@ -27,7 +27,7 @@ html{
   scroll-behavior: smooth;
 }
 section{
-  padding: 2rem 9%;
+  padding: 2rem 12%;
 }
 
 .header-1{
@@ -278,13 +278,18 @@ flex-wrap: nowrap;
   color: var(--black);
   padding-right: 1rem;
 }
+.footer{
+  background: var(--optional);
+}
 
 .footer .box-container{
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+
   
 }
+
 
 .footer .box-container .box{
   padding: 1rem 0;
