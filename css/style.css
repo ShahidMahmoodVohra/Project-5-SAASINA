@@ -16,7 +16,7 @@ text-transform: capitalize;
 transition: all .2s linear;
 }
 
-::selection{
+ ::selection{ 
   background-color: var(--grey);
   color: #fff;
 }
@@ -113,10 +113,11 @@ section{
 
 .heading-1{
  /* border: 3px solid grey;  */
+ display: flex;
   background: var(--optional);
   color: var(--black);
   justify-content: center;
-  text-align: center;
+  align-items: center;
   padding: 10px 5px;
   border-radius: 5px;
   margin-top: 5rem; 
@@ -203,16 +204,47 @@ flex-wrap: nowrap;
 /* home section end */
 
 .btn{
- 
   background: var(--optional);
   color: var(--black);
+  border: 2px solid gray;
   text-transform: capitalize;
   font-size: 20px;
   margin: 10px 0px;
   padding: 15px 25px;
   border-radius: 5px;
+}
+
+.btn-but{
+ 
+  background: none;
+  color: var(--black);
+  border: 2px solid black;
+  text-transform: capitalize;
+  font-size: 20px;
+  margin: 10px 0px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  position: relative;
+  transition:color 0.3s ease-in-out;
 
 }
+.footer .box-container .box .share a:hover{
+  color: crimson;
+
+}
+.btn-but::before{
+  content: "";
+  position: absolute;
+  width: 0;height: 100%;
+  background: var(--grey);
+  top: 0;left: 0;
+  transition: width 0.3s ease-in-out;
+  z-index: -1;
+}
+.btn-but:hover::before{width: 100%;}
+
+.btn-but:hover{color: var(--white);}
+
 .btn-1{
  
   background: var(--optional);
@@ -221,47 +253,89 @@ flex-wrap: nowrap;
   font-size: 20px;
   padding: 1px 8px;
   border-radius: 5px;
-margin-bottom:10px;
+
  
 
 }
 
 
-.section a:hover{
+/* .section a:hover{ 
 
   background: var(--grey);
   color: #fff;
 }
-.heading{
-  text-align: center;
-  font-size: 3.5rem;
+*/
+
+/* footer section starts */
+
+.logo-end{
   color: var(--black);
-   padding: 1rem;
-  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: cursive;
 }
-.heading span{
-  text-transform: uppercase;
+.logo-end i{
+  color: var(--black);
+  padding-right: 1rem;
+}
+
+.footer .box-container{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  
+}
+
+.footer .box-container .box{
+  padding: 1rem 0;
+  flex:1 1 25rem;
+
+}
+.footer .box-container .box .share a{
+  padding: 0;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  text-align: center;
+}
+
+.footer .box-container .box h3{
+  font-size: 2.2rem;
+  color: black;
+
+
+}
+.footer .box-container .box p{
+  font-size: 1.3rem;
+  padding: .7rem 0;
+  color: black;
+
+}
+.footer .box-container .box .links{
+  padding: 1rem 0;
+}
+.footer .box-container .box .links a{
+  display: block;
+  padding: .5rem 0;
+font-size: 1.5rem;
+color: #333;
+
+}
+.footer .box-container .box .links a:hover{
+  text-decoration: underline;
+  color: crimson;
+ 
+}
+
+.footer .credit{
+  padding: 2.5rem 1rem;
+  border-top: .1rem solid rgba(0,0,0,.1);
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+.footer .credit span{
   color: crimson;
 }
 
-
-/* category section start */
-
-.category .box-container{
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  height: 900px;
-
-}
-.category .box-container .box{
-  border:.1rem solid rgba(0,0,0,.3);
-  border-radius: .5rem;
-  text-align: center;
-  padding: 2rem;
-  flex:1 1 30rem ;
-}
-
-
-
-/* category section end */
+/* footer section end */
