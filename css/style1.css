@@ -1,5 +1,6 @@
+ 
 *{
-font-family: 'Ubuntu', sans-serif;
+font-family: 'spinnaker' 'Ubuntu', sans-serif;
 margin: 0px;
 padding: 0px;
 outline: none;
@@ -246,3 +247,25 @@ margin: 0px auto;
 
 
 /* category section end */
+
+/* product page start */
+
+.heading-section-arrival{
+  background: transparent;
+  letter-spacing: 10px;
+  display: flex;
+  background: #fff;
+  color: var(--grey);
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5px;
+  border-radius: 5px;
+ margin-top: 5rem;  
+  font-size: 30px;
+  box-shadow: 0 5px 10px;
+
+
+}
+
+
+/* product page end */

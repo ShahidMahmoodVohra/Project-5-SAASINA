@@ -81,7 +81,7 @@ section{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 9%;
+  padding: 2rem 5%;
 
 }
 .header-2 .navbar a{
@@ -112,16 +112,17 @@ section{
 /* home section start  */
 
 .heading-1{
- /* border: 3px solid grey;  */
+ border: 1px solid grey; 
  display: flex;
-  background: var(--optional);
-  color: var(--black);
+  background: #fff;
+  color: var(--grey);
   justify-content: center;
   align-items: center;
   padding: 10px 5px;
   border-radius: 5px;
-  margin-top: 5rem; 
+  /* margin-top: 5rem;  */
   font-size: 30px;
+  box-shadow: 0 5px 10px;
 }
 
   .section{
@@ -129,13 +130,16 @@ section{
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      margin-top: 2.5rem;
+      margin-top: .5rem;
+      
    }
 
  .section-1{
  display: flex;
  margin: auto 50px auto 60px;
  flex-wrap: no-wrap;
+ 
+ 
 }  
  
 .section-1b{
@@ -145,8 +149,12 @@ section{
  flex-direction: column;
  background-color: #FFE9E3; 
  line-height: 50px;
- height: 475px;
- width: 470px;}  
+ height: 491px;
+ width: 470px;
+ 
+
+
+}  
  
 
 .para-1b{ 
@@ -164,6 +172,10 @@ border-bottom: 4px solid #424242;
 .para-3b{
  color: #424242;
  font-size: 21px;
+ line-height: 10rem;
+}
+.para-3b:hover{
+  color: var(--white);
 }
 
 .section-2{
@@ -180,7 +192,7 @@ flex-wrap: nowrap;
  flex-direction: column;
  background-color: #A3C7BD;
  line-height: 50px;
- height: 475px;
+ height: 491px;
  width: 470px;} 
 
  
@@ -200,6 +212,10 @@ flex-wrap: nowrap;
 .para-2iii{
  color: white;
  font-size: 21px;
+ line-height: 10rem;
+}
+.para-2iii:hover{
+color: #313131;
 }
 /* home section end */
 
@@ -253,10 +269,24 @@ flex-wrap: nowrap;
   font-size: 20px;
   padding: 1px 8px;
   border-radius: 5px;
-
- 
+}
+.chat-box{
+position: fixed;
+  right: 30px;
+  bottom: 4px;
+  background:var(--grey);
+  color: var(--white);
+  border: 1px solid gray;
+  text-transform: capitalize;
+  font-size: 20px;
+  margin: 10px 5px;
+  padding: 15px 30px;
+  border-radius: 1px;
+  text-align: center;
+  cursor: pointer;
 
 }
+
 
 
 /* .section a:hover{ 
@@ -280,11 +310,14 @@ flex-wrap: nowrap;
 }
 .footer{
   background: var(--optional);
+ 
+  padding: 13px 3px;
+
 }
 
 .footer .box-container{
   display: flex;
-  gap: 1rem;
+  /* gap: 1rem; */
   flex-wrap: wrap;
 
   
@@ -311,7 +344,7 @@ flex-wrap: nowrap;
 
 }
 .footer .box-container .box p{
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   padding: .7rem 0;
   color: black;
 
