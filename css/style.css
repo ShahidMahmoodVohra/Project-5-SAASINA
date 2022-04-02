@@ -120,29 +120,55 @@ section{
   align-items: center;
   padding: 10px 5px;
   border-radius: 5px;
-  /* margin-top: 5rem;  */
   font-size: 30px;
   box-shadow: 0 5px 10px;
 }
 
   .section{
+   
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
       margin-top: .5rem;
-      
-   }
+      position: relative;
+     
+     }
+  
+ 
 
  .section-1{
  display: flex;
  margin: auto 50px auto 60px;
  flex-wrap: no-wrap;
- 
- 
-}  
+ position: relative;
+
+} 
+
+
+.box{
+  width: 470px;
+  margin: 0 auto;
+}
+
+.box .box-img{
+  transform: rotateY(0);
+ }
+
+.box:hover .box-img{
+  transform: rotateY(-180deg);
+  transition: all 1s ease-in-out 0s;
+}
+
+.box .box-img img{
+  width: 100%;
+  height: 491px;
+
+}
+
  
 .section-1b{
+  position: relative;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -150,11 +176,16 @@ section{
  background-color: #FFE9E3; 
  line-height: 50px;
  height: 491px;
- width: 470px;
- 
+ width: 470px; 
+ transform: rotateY(0);
+
+} 
+.section-1b:hover {
+  transform: rotateY(360deg);
+  transition: all 2s ease-in-out 0s;
+} 
 
 
-}  
  
 
 .para-1b{ 
@@ -175,12 +206,13 @@ border-bottom: 4px solid #424242;
  line-height: 10rem;
 }
 .para-3b:hover{
-  color: var(--white);
+  color: crimson;
+  cursor: pointer;
 }
 
 .section-2{
  display: flex;
-flex-wrap: nowrap;
+ flex-wrap: nowrap;
  margin: auto 50px auto 60px;
 
 
@@ -193,10 +225,16 @@ flex-wrap: nowrap;
  background-color: #A3C7BD;
  line-height: 50px;
  height: 491px;
- width: 470px;} 
+ width: 470px;
+transform: rotateY(0);} 
+
+.section-2a:hover {
+  transform: rotateY(360deg);
+  transition: all 2s ease-in-out 0s;
+} 
+
 
  
-
 .para-2i{
  color: white;
  font-size: 42px;}
@@ -215,7 +253,8 @@ flex-wrap: nowrap;
  line-height: 10rem;
 }
 .para-2iii:hover{
-color: #313131;
+color: crimson;
+cursor: pointer;
 }
 /* home section end */
 
@@ -286,6 +325,9 @@ position: fixed;
   cursor: pointer;
 
 }
+.chat-box:hover{
+  color:crimson;
+}
 
 
 
@@ -335,6 +377,11 @@ position: fixed;
   width: 4rem;
   line-height: 4rem;
   text-align: center;
+  border-radius: 50%;
+}
+.footer .box-container .box .share a:hover{
+  color: var(--white);
+  background: crimson;
 }
 
 .footer .box-container .box h3{
@@ -376,4 +423,13 @@ color: #333;
   color: crimson;
 }
 
+.footer h1:hover{
+  color: var(--white);
+  background: black;
+}
+
+.footer .credit span:hover{
+  color: var(--grey);
+  background: crimson;
+}
 /* footer section end */
