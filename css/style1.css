@@ -1,74 +1,191 @@
- 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Quicksand:wght@300&family=Supermercado+One&family=Ubuntu:wght@300;400&display=swap');
+
+:root{--grey:#313131;
+    --white:#fff;
+    --optional:#D1D1D1;
+  }
+
 *{
-font-family: 'spinnaker' 'Ubuntu', sans-serif;
+font-family:  'Ubuntu', sans-serif;
 margin: 0px;
 padding: 0px;
 outline: none;
 border: none;
 box-sizing: border-box;
 text-decoration: none;
-/* text-transform: capitalize; */
+text-transform: capitalize;
+transition: all .2s linear;
 }
 
-:root{--grey:#313131;
-    --white:#fff;
-    --optional:#D1D1D1;
+::selection{ 
+  background-color: var(--grey);
+  color: #fff;
+}
+  html{
+    font-size: 62.5%;
+    overflow: auto;
+    scroll-padding-top: 6.5rem;
+    scroll-behavior: smooth;
   }
-  /* contact page start */
-.container{
+  section{
+    padding: 2rem 5%;
+  }
+
+  .header-1{
+  background:var(--grey);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+}
+.logo{
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: cursive;
+}
+.logo i{
+  color: var(--optional);
+  padding-right: 1rem;
+}
+.header-1 .search-box-container{
+  display: flex;
+  height: 5rem;
+}
+.header-1 .search-box-container #search-box{
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--grey);
+  border: .6rem solid rgba(0,0,0,.6);
+  text-transform: none;
+  box-shadow:5px;
+}
+.header-1 .search-box-container label{
+  height: 100%;
+  width: 6rem;
+  font-size: 2rem;
+  line-height: 3.7rem;
+  color: var(--grey);
+  background: var(--white);
+  cursor: pointer;
+  text-align: center;
+  border: .6rem solid rgba(0,0,0,.6);
+  border-radius: 3px;
+  box-shadow:5px;
+}
+
+.header-1 .search-box-container label:hover{
+  background: var(--optional);
+}
+.header-2{
+  background:var(--optional);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5%;
+}
+.header-2 .navbar a{
+  padding: 12px 18px;
+  font-size: 2rem;
+  border-radius: .5rem;
+  color: var(--black);
+  cursor: pointer;
+}
+.header-2 .navbar a:hover{
+  background: var(--grey);
+  color: #fff;
+}
+.header-2 .icons a {
+  padding-left: 1rem;
+  font-size: 2.5rem;
+  color: var(--black);
+}
+.header-2 .icons a:hover{
+  color: var(--white);
+}
+/*header section end  */
+
+  /* contact us page start */
+
+.contact-container{
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem !important;
-    padding-bottom: 6rem;
-    background-color: var(--grey);
-  
-  
-  }
- 
-  .container .content{
+    padding: 4rem 15rem 4rem 1rem;
+    background-color: var(--optional);
     text-align: center;
-    color: var(--white);
-    /* font-size: large; */
-  
+    color: var(--grey);
+    flex-direction: column;
   }
-  
-  .container .content h3{
-   color: var(--white);
-   font-size: 30px;
-   padding: 0px 10px;
-  
-  
+  .contact-container form{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px  rgba(148, 114, 114, 0.1);
+    background: var(--white);
+    width: 450px;
   }
-  
-  .container .content h3 span{
-    background: crimson;
+  .contact-container  h1{
+    font-size: 30px;
+    color: var(--grey);
+    text-transform: capitalize;
+    margin: 10px;
+    letter-spacing: 5px;
+}
+.contact-container h3{
+  font-size: 20px;
+  color: var(--grey);
+  text-transform: capitalize;
+  padding: 10px;
+  line-height: 5px;
+}
+.contact-container p{
+  font-size: 18px;
+  padding: 5px;
+  line-height: 12px;
+  margin-bottom: 30px;
+}
+  .contact-container form input{
+    font-size: 15px;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 8px 0px;
+    background: var(--optional);
+    border-radius: 5px;
+    text-align: justify;
+    text-transform: none;
+  }
+  .contact-container form label{
+  font-size: 20px;
+
+  }
+  .contact-container form textarea{
+    height: 150px;
+    width: 430px;
+    font-size: 20px;
+    background: var(--optional);
+    border-radius: 5px;
+    text-transform: lowercase;
+  }
+
+  .contact-container form .submit{
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--white);
+    padding: 10px 25px;
+    font-size: 20px;
     color: var(--grey);
     border-radius: 5px;
-    padding: 0px 10px;
-    border: 2px solid var(--white);
-   
-  }
-  .container.content h1{
-    color: var(--white);
-    font-size: 5rem !important;
-    font-weight: bold;
-    
-  }
-  .saasina{font-family: cursive;
-   }
+    background-color: var(--optional);
 
-  .container.content h1 span{
-    color: var(--white);
-    font-size: 30px;
   }
-  .container .content p{
-    font-size: 25px;
- margin-bottom: 20px;
-    
+  .contact-container .submit:hover{
+    background: var(--grey);
+    color: var(--optional);
   }
-  .container .content .btn{
+  .contact-container .btn{
     display: inline-block;
     border: 2px solid var(--white);
     padding: 10px 25px;
@@ -79,13 +196,15 @@ text-decoration: none;
     text-transform: capitalize;
 
   }
-  .container .content .btn:hover{
-    color: crimson;
+  .contact-container .btn:hover{
+    background: var(--optional);
+    color: var(--grey);
   }
 
-  /* contact page end */
+  /* contact/ welcome page end */
 
   /* Registration page start */
+
   .form-container{
     min-height: 100vh;
     display: flex;
@@ -93,7 +212,7 @@ text-decoration: none;
     align-items: center;
     padding: 4rem !important;
     padding-bottom: 10rem;
-    background-color: var(--grey);
+    background-color: var(--optional);
   }
   .form-container form{
     padding: 10px;
@@ -122,23 +241,13 @@ text-decoration: none;
   .form-container form input option{
     background: var(--white);
   }
-  .form-container form .form-btn {
-    background: #fbd0d9;
-    color: crimson;
-    text-transform: capitalize;
-    font-size: 20px;
-  }
-  .form-container form .form-btn:hover{
-    background: crimson;
-    color: var(--white);
-  }
   .form-container form p{
     margin-top: 10px;
     font-size: 20px;
     color: var(--grey);
   }
   .form-container form p a{
-    color: crimson;
+    color: var(--grey);
   }
 
  .form-container form .form-btn{
@@ -146,61 +255,49 @@ text-decoration: none;
   border: 2px solid whitesmoke;
   padding: 10px 25px;
   font-size: 20px;
-  color: crimson;
+  color: var(--white);
   border-radius: 5px;
-  background: #fbd0d9;
+  background: var(--grey);
   text-transform: capitalize;
   cursor: pointer;
   margin-top: 10px;
-  
 } 
 
 .form-container form .form-btn:hover{
-  background: crimson;
-  color: var(--white);
-
+  background: var(--optional);
+  color: var(--grey);
 }
 
+ /* Registration page end */
 
 
-  /* Registration page end */
+  /* category section start */
 
-  .heading{
-    text-align: center;
-    font-size: 2rem;
-    color: var(--black);
-     padding: 1rem 0;
-    text-transform: uppercase;
-  }
-  .heading .category-span{
-    display: flex;
-    width: 100%;
-    padding: 10px 0;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid #fff;
-    text-transform: uppercase;
- 
-   
+ .heading{
+  background: transparent;
+  letter-spacing: 10px;
+  display: flex;
+  background: #fff;
+  color: var(--grey);
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5px;
+  border-radius: 5px;
+  font-size: 30px;
+  box-shadow: 0 5px 10px;
+ }
 
-  }
-  .heading span{
-
-    text-transform: uppercase;
-    color: var(--white);
-    background:#424242;
-  }
-   .btn-1{
+    .btn-1{
     display: inline-block;
     border: 2px solid whitesmoke;
-    padding: 10px 25px;
-    font-size: 20px;
+    padding: 7px 12px;
+    font-size: 14px;
     color: var(--black);
     border-radius: 5px;
     background: var(--optional);
     text-transform: capitalize;
     cursor: pointer;
-    margin-top: 10px;} 
+    margin-top: 5px;} 
 
     .btn-center{
       display: inline-block;
@@ -215,22 +312,15 @@ text-decoration: none;
       margin: 5px auto 10px auto;}
 
 
-
-
-    
 .category a:hover{
-
-  background: var(--grey);
+background: var(--grey);
   color: #fff;
 }
-  /* category section start */
-
 .category .box-container{
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
 }
-
 .category .box-container .box{
   background: var(--optional);
   border:.1rem solid rgba(0,0,0,.1);
@@ -245,13 +335,9 @@ text-decoration: none;
 }
 .category .box-container .box h3{
   font-size: 2rem;
-  /* background: var(--grey); */
   color: var(--black);
   max-width: 15rem;
   margin: 0px auto;
-
-
-
 }
 .category .box-container .box p{
   font-size: 1rem;
@@ -260,30 +346,21 @@ text-decoration: none;
   width: 7rem;
   margin: 0px auto;
   padding: 13px 3px;
-
-}
-
-.category .category-span{
-display: flex;
-width: 100%;
-padding: 10px 0;
-justify-content: center;
-align-items: center;
-background: #333;  
-color: #fff;
 }
 .app-3-span-a{
-  color: red;
+  color:black;
   font-size: 18px;
-  font-weight: lighter;
+  font-weight: bold;
 }
 .app-3-span-b{
 text-decoration: line-through;
 font-size: 18px;
 font-weight: lighter;
 }
-/* electronics section starts */
+/* category section end */
 
+
+/* electronics section starts */
 
 .sub-heading-2{
   display: flex;
@@ -295,37 +372,38 @@ font-weight: lighter;
 
 }
 .sub-heading-2 h1{
+  background: var(--optional);
   font-size: 30px;
   color: black;
   word-spacing: 2px;
   letter-spacing: 2px;
+padding: 5px 25px;
 }
 .sub-heading-2 p{
+  margin-top: 15px;
+  padding: 6px 0;
   font-size: 20px;
-  /* text-transform: uppercase !important; */
   letter-spacing: 2px;
   color: #424242;
   font-weight: 500;
   max-width: 776px;
   text-align: center;
-line-height: normal;
+  line-height: normal;
 }
-
-
 .container-appliances{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-top: .5rem;
+  background: lightgray;
 }
 .appliance-3{
   display: flex;
   flex: 1 1 30rem;
   justify-content: center;
   flex-wrap: nowrap;
-  margin-bottom: 200px;
-
+  margin: 50px auto 150px auto;
 }
 .appliance-3 .app-3a {
   position:relative;
@@ -333,8 +411,7 @@ line-height: normal;
   left: 140px;
 }
 .appliance-3 .app-3a .app-3-1{
-
-  background: red;
+  background:var(--grey);
   color: #fff;
   padding: 6px 2px;
   font-weight: bold;
@@ -362,18 +439,17 @@ line-height: normal;
   text-align: center;
   justify-content: center;
   font-size: larger;
-  color: lightgray;
+  color: var(--grey);
   line-height: 60px;
 }
 .appliance-3 .app-3z h3,.appliance-3 .app-3z p {
   font-size: 18px;
-  color: #424242;
-  font-weight: lighter;
+  color: var(--grey);
+  font-weight: 500;
   text-align: center;
   justify-content: center;
 }
-.app-3-span-a{
-  color: red;
+.app-3-span-c{
   font-size: 18px;
   font-weight: lighter;
 }
@@ -383,8 +459,6 @@ font-size: 18px;
 font-weight: lighter;
 }
 /* electronics section end */
-
-/* category section end */
 
 
 
@@ -402,8 +476,6 @@ font-weight: lighter;
   border-radius: 5px;
   font-size: 30px;
   box-shadow: 0 5px 10px;
-
-
 }
 .section-arrival{
   margin-top: 80px;
@@ -421,7 +493,6 @@ font-weight: lighter;
 .col{
   flex-basis: 30%;
   overflow: hidden;
-
 }
 
 .card{
@@ -467,7 +538,6 @@ font-weight: lighter;
   background-size: cover;
 }
 
-/* have to change span class */
 .new-arrival{
   display: flex;
   width: 80%;
@@ -478,7 +548,6 @@ font-weight: lighter;
   background: #333;
   color: #fff;
   transition: transform 2s;
- 
 }
 
 .card-back{
@@ -545,9 +614,9 @@ font-weight: lighter;
   transform: rotateY(0);
   transition: all 0.9s ease-in-out 0s;
 }
-
-
 .new-arrival-bottom h1{
+  text-decoration: underline;
+  font-size: 33px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -555,7 +624,6 @@ font-weight: lighter;
   letter-spacing: 10px;
   font-weight: normal;
   color: var(--grey);
-
 }
 .new-arrival-bottom p{
   display: flex;
@@ -568,7 +636,6 @@ font-weight: lighter;
 }
 
 .form-container-products{
- 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -598,7 +665,7 @@ font-weight: lighter;
 }
 
 .form-container-products form button{
-  background: rgb(179, 213, 203);
+  background: var(--grey);
   color: var(--white);
   font-size: 20px;
   width: 100%;
@@ -608,12 +675,8 @@ font-weight: lighter;
   width: 300px;
  }
  .form-container-products form button:hover{
-color: grey;
+color:var(--white);
  }
-
-
-
-
 
 /* product page end */
 
@@ -649,7 +712,7 @@ color: grey;
 .btn-but:hover{color: var(--white);}
 
 .chat-box{
-position: fixed;
+  position: fixed;
   right: 30px;
   bottom: 4px;
   background:var(--grey);
@@ -665,5 +728,84 @@ position: fixed;
 
 }
 .chat-box:hover{
-  color:crimson;
+  color:var(--optional);
 }
+
+/* footer section starts */
+
+.logo-end{
+  color: var(--black);
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: cursive;
+}
+.logo-end i{
+  color: var(--black);
+  padding-right: 1rem;
+}
+.footer{
+  background: var(--optional);
+  border-top: .5px solid black;
+  padding: 13px 3px;
+}
+
+.footer .box-container-footer{
+  display: flex;
+  /* gap: 1rem; */
+  flex-wrap: wrap;
+}
+
+
+.footer .box-container-footer .box-footer{
+  padding: 1rem 0;
+  flex:1 1 25rem;
+}
+.footer .box-container-footer .box-footer .share-footer a{
+  padding: 0;
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  border-radius: 50%;
+}
+.footer .box-container-footer .box-footer .share-footer a:hover{
+  color: var(--white);
+  background: var(--optional);}
+
+.footer .box-container .box-footer h3{
+  font-size: 2.2rem;
+  color: black;
+}
+.footer .box-container-footer .box-footer p{
+  font-size: 1.1rem;
+  padding: .7rem 0;
+  color: black;
+}
+.footer .box-container-footer .box-footer .links{
+  padding: 1rem 0;
+}
+.footer .box-container-footer .box-footer .links a{
+  display: block;
+  padding: .5rem 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+.footer.box-container-footer.box-footer.links a:hover{
+  text-decoration: underline;
+  color: var(--grey);
+}
+
+.footer .credit{
+  padding: 2.5rem 1rem;
+  border-top: .1rem solid rgba(0,0,0,.1);
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.footer h1:hover{
+  color: var(--white);
+  background: black;
+}
+
+/* footer section end */

@@ -14,6 +14,7 @@ box-sizing: border-box;
 text-decoration: none;
 text-transform: capitalize;
 transition: all .2s linear;
+
 }
 
  ::selection{ 
@@ -54,21 +55,25 @@ section{
 .header-1 .search-box-container #search-box{
   width: 100%;
   height: 100%;
-  padding: 1rem;
-  font-size: 2rem;
-  color: var(--optional);
-  border: .6rem solid rgba(0,0,0,.3);
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--grey);
+  border: .6rem solid rgba(0,0,0,.6);
   text-transform: none;
+  box-shadow:5px;
 }
 .header-1 .search-box-container label{
   height: 100%;
-  width: 8rem;
-  font-size: 2.5rem;
-  line-height: 5rem;
+  width: 6rem;
+  font-size: 2rem;
+  line-height: 3.7rem;
   color: var(--grey);
   background: var(--white);
   cursor: pointer;
   text-align: center;
+  border: .6rem solid rgba(0,0,0,.6);
+  border-radius: 3px;
+  box-shadow:5px;
 }
 
 .header-1 .search-box-container label:hover{
@@ -125,6 +130,8 @@ section{
   align-items: center;
   margin-top: .5rem;
   position: relative;
+
+ 
  }
   
 .section-1{
@@ -188,7 +195,7 @@ color: #424242;
  line-height: 10rem;
 }
 .para-3b:hover{
-  color: crimson;
+  color: var(--white);
   cursor: pointer;
 }
 
@@ -231,31 +238,48 @@ color: #424242;
  line-height: 10rem;
 }
 .para-2iii:hover{
-color: crimson;
+color: var(--grey);
 cursor: pointer;
 }
 
 /* electronic section start */
+
+.section-electronics{
+  
+  background: lightgray;
+}
+
 .electronics-items{
+  width: fit-content;
   border: 1px solid grey; 
   display: flex;
-   background: #fff;
+   background:var(--optional);
    color: var(--grey);
    justify-content: center;
    align-items: center;
-   padding: 10px 5px;
+   padding: 10px 25px;
    font-size: 20px;
    box-shadow: 0 5px 10px;
-   margin-top: 80px;
+   border-radius: 5px;
+   margin: 30px auto;
+}
+.electronics-items:hover{
+  color: var(--white);
+  background: var(--grey);
 }
 
 .sub-heading-1{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px 0px;
+  margin: 50px auto;
+  padding: 5px 25px;
   line-height: 45px;
   flex-direction: column;
+  background:var(--optional);
+   color: var(--grey);
+   width: fit-content;
+   border-radius: 5px;
 
 }
 .sub-heading-1 h1{
@@ -276,10 +300,14 @@ cursor: pointer;
   display: flex;
   gap: 50px;
   margin: 15px 0px 15px 100px;
+  background: var(--optional);
+
  
 }
 .app-2a{
   margin-bottom: 15px;
+  
+ 
 }
 .sub-heading-2{
   display: flex;
@@ -288,17 +316,21 @@ cursor: pointer;
   margin: 60px 0px;
   line-height: 45px;
   flex-direction: column;
-
+  background: #919090;
+  
 }
 .sub-heading-2 h1{
+  text-decoration: underline;
   font-size: 30px;
   color: black;
   word-spacing: 2px;
   letter-spacing: 2px;
+
 }
 .sub-heading-2 p{
   font-size: 18px;
   text-transform: uppercase !important;
+font-weight: bolder;
   letter-spacing: 2px;
   color: #424242;
   font-weight: 500;
@@ -310,6 +342,9 @@ cursor: pointer;
   justify-content: center;
   align-items: center;
   margin-top: .5rem;
+  margin-bottom: -21px;
+ 
+
 }
 .appliance-3{
   display: flex;
@@ -317,7 +352,7 @@ cursor: pointer;
   justify-content: center;
   flex-wrap: nowrap;
   margin-bottom: 200px;
-
+  
 }
 .appliance-3 .app-3a {
   position:relative;
@@ -326,8 +361,8 @@ cursor: pointer;
 }
 .appliance-3 .app-3a .app-3-1{
 
-  background: red;
-  color: #fff;
+  background:var(--grey);
+  color: var(--white);
   padding: 6px 2px;
   font-weight: bold;
   font-size: 16px;
@@ -354,24 +389,24 @@ cursor: pointer;
   text-align: center;
   justify-content: center;
   font-size: larger;
-  color: lightgray;
+  color: var(--grey);
   line-height: 60px;
 }
 .appliance-3 .app-3z h3,.appliance-3 .app-3z p {
   font-size: 18px;
   color: #424242;
-  font-weight: lighter;
+  font-weight: 500;
   text-align: center;
   justify-content: center;
 }
 .app-3-span-a{
-  color: red;
-  font-size: 18px;
-  font-weight: lighter;
+  color:black;
+  font-size: 15px;
+  font-weight: bold;
 }
 .app-3-span-b{
 text-decoration: line-through;
-font-size: 18px;
+font-size: 15px;
 font-weight: lighter;
 }
 
@@ -382,6 +417,7 @@ font-weight: lighter;
 /* home section end */
 
 .btn{
+  
   background: var(--optional);
   color: var(--black);
   border: 2px solid gray;
@@ -391,6 +427,11 @@ font-weight: lighter;
   padding: 15px 25px;
   border-radius: 5px;
 }
+.btn-but-1{
+  display: flex;
+  justify-content: center;
+
+}
 
 .btn-but{
  
@@ -399,7 +440,7 @@ font-weight: lighter;
   border: 2px solid black;
   text-transform: capitalize;
   font-size: 20px;
-  margin: 10px 0px;
+  margin: 30px 0px 0px 0px;
   padding: 15px 25px;
   border-radius: 5px;
   position: relative;
@@ -407,7 +448,7 @@ font-weight: lighter;
 
 }
 .footer .box-container .box .share a:hover{
-  color: crimson;
+  color: var(--optional);
 
 }
 .btn-but::before{
@@ -449,7 +490,7 @@ font-weight: lighter;
 
 }
 .chat-box:hover{
-  color:crimson;
+  color:var(--optional);
 }
 
 /* footer section starts */
@@ -466,8 +507,9 @@ font-weight: lighter;
 }
 .footer{
   background: var(--optional);
- 
+ border-top: .5px solid black;
   padding: 13px 3px;
+  margin-top: 10px;
 
 }
 
@@ -495,7 +537,7 @@ font-weight: lighter;
 }
 .footer .box-container .box .share a:hover{
   color: var(--white);
-  background: crimson;
+  background: var(--optional);
 }
 
 .footer .box-container .box h3{
@@ -522,7 +564,7 @@ font-weight: lighter;
 }
 .footer .box-container .box .links a:hover{
   text-decoration: underline;
-  color: crimson;
+  color: var(--grey);
  
 }
 
@@ -533,17 +575,10 @@ font-weight: lighter;
   margin-top: 1rem;
   font-size: 2rem;
 }
-.footer .credit span{
-  color: crimson;
-}
 
 .footer h1:hover{
   color: var(--white);
   background: black;
 }
 
-.footer .credit span:hover{
-  color: var(--grey);
-  background: crimson;
-}
 /* footer section end */

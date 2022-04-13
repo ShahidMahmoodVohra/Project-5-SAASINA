@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/style1.css">
 </head>
+
 <body>
     
+<div class="contact-container">
+
+<h1>Contact Us</h1>
+<h3>hi, customer welcome to <i class="saasina"> SAASINA </i></h3>
+<p>The best online store</p>
+       
+<form action="./success.html">
+
+<!-- <input type="text" name="name" required placeholder="enter your name"> -->
+
+<label for="name">Username:</label>
+<input id="name" type="text" placeholder="Enter your name"/>
+
+<label> email address: </label>
+<input type="email" name="email"  placeholder="Enter your e-mail" />
+
+<label for="password">Password:</label>
+<input id="password"  type="password" placeholder="Enter your password" />
+
+<p>Gender:</p>
+
+<label for="female">Female</label>
+<input type="radio" id="female" name="gender" value="f" checked="checked" />
+<label for="male">Male</label>
+<input  type="radio" id="male" name="gender" value="m" />
+
+<label for="mobile">  Mobile:</label>
+<input type="number" name="mobile" placeholder="Enter your mobile number"  />
+                
+ <label for="fax"> Fax :</label>
+<input type="number" name="fax"  placeholder="Enter your fax number" />
+
+
+<p>Search</p>
+<input type="search" name="search" placeholder="Search here..." />
+
+<p>Enter your comments</p>                
+<textarea name="comments" placeholder=" comments here..."></textarea>
+
+
+ <a href="./login.html" class="submit">submit </a>
+                
+                
+<a href="./login.html" class="btn">login </a>
+<a href="./registration.html" class="btn">register now </a>
+<a href="../index.html" class="btn">home page</a>
+                
+</form>
+    
+</div>
+
 </body>
+
 </html>
