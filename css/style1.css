@@ -30,55 +30,71 @@ transition: all .2s linear;
   section{
     padding: 2rem 5%;
   }
-
   .header-1{
-  background:var(--grey);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem 9%;
-}
-.logo{
-  color: var(--white);
-  font-size: 3rem;
-  font-weight: bold;
-  font-family: cursive;
-}
-.logo i{
-  color: var(--optional);
-  padding-right: 1rem;
-}
-.header-1 .search-box-container{
-  display: flex;
-  height: 5rem;
-}
-.header-1 .search-box-container #search-box{
-  width: 100%;
-  height: 100%;
-  padding: 0.5rem;
-  font-size: 1.2rem;
-  color: var(--grey);
-  border: .6rem solid rgba(0,0,0,.6);
-  text-transform: none;
-  box-shadow:5px;
-}
-.header-1 .search-box-container label{
-  height: 100%;
-  width: 6rem;
-  font-size: 2rem;
-  line-height: 3.7rem;
-  color: var(--grey);
-  background: var(--white);
-  cursor: pointer;
-  text-align: center;
-  border: .6rem solid rgba(0,0,0,.6);
-  border-radius: 3px;
-  box-shadow:5px;
-}
+    background:var(--grey);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4rem 4%;
+  }
+  .logo{
+    color: var(--white);
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: cursive;
+  }
+  .logo i{
+    color: var(--optional);
+    padding-right: 1rem;
+  }
+  .header-1 .search-box-container{
+    display: flex;
+    }
+  .header-1 .search-box-container #search-box{
+    width: 70%;
+    height: 100%;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    color: var(--white);
+    border: 0.1px solid var(--optional);
+    text-transform: none;
+    background: var(--grey);
+    border-radius: 2px;
+    margin-top: 8px;
+  }
+  .header-1 .search-box-container label{
+    height: 100%;
+    width: 4.1rem;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    color: var(--grey);
+    background: var(--white);
+    cursor: pointer;
+    text-align: center;
+    border: 0.5rem solid rgba(0,0,0,.6);
+    border-radius: 1px;
+    box-shadow: 5px;
+    margin-top: 7px;
+  } 
+  .header-1 .search-box-container label {
+    height: 100%;
+    width: 4.1rem;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    color: var(--optional);
+    background: var(--grey);
+    cursor: pointer;
+    text-align: center;
+    border: 0.1rem solid white;
+    border-radius: 1px;
+    box-shadow: 5px;
+    margin-top: 8px;
+  }
+   .header-1 .search-box-container label:hover{
+    background: var(--white);
+  }
 
-.header-1 .search-box-container label:hover{
-  background: var(--optional);
-}
+
 .header-2{
   background:var(--optional);
   display: flex;
@@ -107,6 +123,7 @@ transition: all .2s linear;
 }
 /*header section end  */
 
+
   /* contact us page start */
 
 .contact-container{
@@ -126,6 +143,7 @@ transition: all .2s linear;
     box-shadow: 0 5px 10px  rgba(148, 114, 114, 0.1);
     background: var(--white);
     width: 450px;
+    margin: 10px;
   }
   .contact-container  h1{
     font-size: 30px;
@@ -133,6 +151,7 @@ transition: all .2s linear;
     text-transform: capitalize;
     margin: 10px;
     letter-spacing: 5px;
+    text-decoration: underline;
 }
 .contact-container h3{
   font-size: 20px;
@@ -142,7 +161,7 @@ transition: all .2s linear;
   line-height: 5px;
 }
 .contact-container p{
-  font-size: 18px;
+  font-size: 20px;
   padding: 5px;
   line-height: 12px;
   margin-bottom: 30px;
@@ -151,16 +170,37 @@ transition: all .2s linear;
     font-size: 15px;
     width: 100%;
     padding: 10px 15px;
-    margin: 8px 0px;
+    margin: 15px 0px;
     background: var(--optional);
     border-radius: 5px;
     text-align: justify;
     text-transform: none;
+    
   }
   .contact-container form label{
   font-size: 20px;
 
   }
+  .radio-button{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: 15px 80px;
+  }
+  [type="radio"].with-gap:checked+label:before {
+    border-radius: 50%;
+    border: 2px solid #26a69a;
+}
+
+
+[type="radio"].with-gap:checked+label:after {
+    border-radius: 50%;
+    border: 2px solid #26a69a;
+    background-color: #26a69a;
+    z-index: 0;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+}
   .contact-container form textarea{
     height: 150px;
     width: 430px;
@@ -175,6 +215,7 @@ transition: all .2s linear;
     justify-content: center;
     border: 2px solid var(--white);
     padding: 10px 25px;
+    margin-top: 10px;
     font-size: 20px;
     color: var(--grey);
     border-radius: 5px;
@@ -188,7 +229,7 @@ transition: all .2s linear;
   .contact-container .btn{
     display: inline-block;
     border: 2px solid var(--white);
-    padding: 10px 25px;
+    padding: 9px 25px;
     font-size: 20px;
     color: var(--white);
     border-radius: 5px;
@@ -772,7 +813,7 @@ color:var(--white);
   color: var(--white);
   background: var(--optional);}
 
-.footer .box-container .box-footer h3{
+.footer .box-container-footer .box-footer h3{
   font-size: 2.2rem;
   color: black;
 }
@@ -780,6 +821,18 @@ color:var(--white);
   font-size: 1.1rem;
   padding: .7rem 0;
   color: black;
+}
+
+.btn{
+  
+  background: var(--optional);
+  color: var(--black);
+  border: 2px solid gray;
+  text-transform: capitalize;
+  font-size: 20px;
+  margin: 5px 0px;
+  padding: 15px 25px;
+  border-radius: 5px;
 }
 .footer .box-container-footer .box-footer .links{
   padding: 1rem 0;
@@ -790,7 +843,7 @@ color:var(--white);
   font-size: 1.5rem;
   color: #333;
 }
-.footer.box-container-footer.box-footer.links a:hover{
+.footer .box-container-footer .box-footer .links a:hover{
   text-decoration: underline;
   color: var(--grey);
 }

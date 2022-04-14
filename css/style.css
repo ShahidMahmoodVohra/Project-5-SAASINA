@@ -36,7 +36,7 @@ section{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 9%;
+  padding: 1.4rem 4%;
 }
 .logo{
   color: var(--white);
@@ -50,34 +50,60 @@ section{
 }
 .header-1 .search-box-container{
   display: flex;
-  height: 5rem;
+  /* height: 5rem; */
+  
 }
 .header-1 .search-box-container #search-box{
-  width: 100%;
+  /* width: 100%; */
+  width: 70%;
   height: 100%;
   padding: 0.5rem;
-  font-size: 1.2rem;
-  color: var(--grey);
-  border: .6rem solid rgba(0,0,0,.6);
+  font-size: 1.3rem;
+  color: var(--white);
+  /* border: .6rem solid rgba(0,0,0,.6); */
+  border: 0.1px solid var(--optional);
   text-transform: none;
-  box-shadow:5px;
+  /* box-shadow:5px; */
+  background: var(--grey);
+  border-radius: 2px;
+  margin-top: 8px;
+
+
 }
 .header-1 .search-box-container label{
   height: 100%;
-  width: 6rem;
-  font-size: 2rem;
-  line-height: 3.7rem;
+  width: 4.1rem;
+  font-size: 1rem;
+  line-height: 1.7rem;
   color: var(--grey);
   background: var(--white);
   cursor: pointer;
   text-align: center;
-  border: .6rem solid rgba(0,0,0,.6);
-  border-radius: 3px;
-  box-shadow:5px;
+  border: 0.5rem solid rgba(0,0,0,.6);
+  border-radius: 1px;
+  box-shadow: 5px;
+  margin-top: 7px;
+} 
+.header-1 .search-box-container label {
+  height: 100%;
+  width: 4.1rem;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  color: var(--optional);
+  background: var(--grey);
+  cursor: pointer;
+  text-align: center;
+  border: 0.1rem solid white;
+  border-radius: 1px;
+  box-shadow: 5px;
+  margin-top: 8px;
 }
 
+
+
+
 .header-1 .search-box-container label:hover{
-  background: var(--optional);
+  background: var(--white);
 }
 .header-2{
   background:var(--optional);
@@ -416,17 +442,6 @@ font-weight: lighter;
 
 /* home section end */
 
-.btn{
-  
-  background: var(--optional);
-  color: var(--black);
-  border: 2px solid gray;
-  text-transform: capitalize;
-  font-size: 20px;
-  margin: 10px 0px;
-  padding: 15px 25px;
-  border-radius: 5px;
-}
 .btn-but-1{
   display: flex;
   justify-content: center;
@@ -551,6 +566,18 @@ font-weight: lighter;
   padding: .7rem 0;
   color: black;
 
+}
+
+.btn{
+  
+  background: var(--optional);
+  color: var(--black);
+  border: 2px solid gray;
+  text-transform: capitalize;
+  font-size: 20px;
+  margin: 10px 0px;
+  padding: 15px 25px;
+  border-radius: 5px;
 }
 .footer .box-container .box .links{
   padding: 1rem 0;
